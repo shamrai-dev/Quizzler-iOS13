@@ -16,11 +16,4 @@ struct Question {
         self.question = q
         self.answer = a
     }
-    
-    func checkAnswer(userAnswer: String) -> Bool {
-        if userAnswer == self.answer {
-            return true
-        }
-        return false
-    }
 }
