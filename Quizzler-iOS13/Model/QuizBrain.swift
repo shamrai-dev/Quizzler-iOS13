@@ -32,4 +32,17 @@ struct QuizBrain {
         }
         return false
     }
+    
+    func getQuestionText() -> String {
+        return questions[currentQuestionIndex].question
+    }
+    
+    mutating func next() -> Bool {
+        if currentQuestionIndex < questions.count - 1 {
+            self.currentQuestionIndex += 1
+            return true
+        }
+        
+        return false
+    }
 }

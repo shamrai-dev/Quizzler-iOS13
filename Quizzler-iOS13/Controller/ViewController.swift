@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     func askNextQuestion() {
         if quizBrain.currentQuestionIndex < quizBrain.questions.count {
-            questionLabel.text = quizBrain.questions[quizBrain.currentQuestionIndex].question
+            questionLabel.text = quizBrain.getQuestionText()
         } else {
             showResults()
         }
